@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"3d34886a-acab-4db5-a9dd-4aad34bacc1e",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.crudOperations.listResources</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-09 07:22:49 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>This is single resource list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:25]"><span>[2.1:25]</span> <span>This is to get  resource list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:26]"><span>[2.2:26]</span> <span>This is to get  resource list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.3:27]"><span>[2.3:27]</span> <span>This is to get  resource list</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/crudOperations/listResources.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">This is to check list of resources</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">This is single resource list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>298</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseAppUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">19:22:43.593 karate.env system property was: null 
+19:22:43.595 karate config: {
+  &quot;env&quot;: &quot;dev&quot;,
+  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;timeout&quot;: 30000,
+  &quot;retryCount&quot;: 3,
+  &quot;retryInterval&quot;: 1000,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;api/unknown&#39;,&#39;2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = &#39;reqres-free-v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">296</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:22:43.599 request:
+1 &gt; GET https://reqres.in/api/unknown/2
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:22:43.893 response time in milliseconds: 293
+1 &lt; 200
+1 &lt; Date: Wed, 09 Jul 2025 13:52:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1752058076&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=2%2FswMg2ncxGrMbA7jLaYvGUfYGgtGVly9LQ6M1njsBw%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1752058076&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=2%2FswMg2ncxGrMbA7jLaYvGUfYGgtGVly9LQ6M1njsBw%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Request-Id: 1b7a1e7a-6122-4f60-87fd-609372617297
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 92
+1 &lt; Ratelimit-Reset: 29
+1 &lt; Etag: W/&quot;122-EJoELj/0trWDxXZhKN3eWEbbcBA&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 2290
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 95c84db8aefbc09d-SIN
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=83724&amp;min_rtt=74071&amp;rtt_var=34672&amp;sent=3&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=219&amp;recv_bytes=961&amp;delivery_rate=17037&amp;cwnd=250&amp;unsent_bytes=0&amp;cid=8ddee6bc56a5d142&amp;ts=120&amp;x=0&quot;
+{&quot;data&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,&quot;text&quot;:&quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">19:22:43.895 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;fuchsia rose&quot;,
+    &quot;year&quot;: 2001,
+    &quot;color&quot;: &quot;#C74375&quot;,
+    &quot;pantone_value&quot;: &quot;17-2031&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+    &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:25]</span>
+                <span class="scenario-name">This is to get  resource list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>653</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseAppUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">19:22:43.760 karate.env system property was: null 
+19:22:43.762 karate config: {
+  &quot;env&quot;: &quot;dev&quot;,
+  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;timeout&quot;: 30000,
+  &quot;retryCount&quot;: 3,
+  &quot;retryInterval&quot;: 1000,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;api/unknown&#39;,&#39;3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = &#39;reqres-free-v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">650</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.18">19:22:43.766 request:
+1 &gt; GET https://reqres.in/api/unknown/3
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:22:44.414 response time in milliseconds: 646
+1 &lt; 200
+1 &lt; Date: Wed, 09 Jul 2025 13:52:45 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1752069165&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=b0VqFg7P%2BK1hM3wlfNVETjNp91jA67lyMq2quSBhVeQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1752069165&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=b0VqFg7P%2BK1hM3wlfNVETjNp91jA67lyMq2quSBhVeQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Request-Id: f0acec24-69b3-4517-b251-54ce3dfeb579
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 85
+1 &lt; Ratelimit-Reset: 59
+1 &lt; Etag: W/&quot;11e-JRBZgkItNBfNzTTTDTwn6H/asw8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: MISS
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 95c84db98c61b802-SIN
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=79681&amp;min_rtt=78927&amp;rtt_var=17431&amp;sent=6&amp;recv=9&amp;lost=0&amp;retrans=0&amp;sent_bytes=3107&amp;recv_bytes=706&amp;delivery_rate=47950&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=d149fec98b4876a5&amp;ts=482&amp;x=0&quot;
+{&quot;data&quot;:{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,&quot;text&quot;:&quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.20">19:22:44.416 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;true red&quot;,
+    &quot;year&quot;: 2002,
+    &quot;color&quot;: &quot;#BF1932&quot;,
+    &quot;pantone_value&quot;: &quot;19-1664&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+    &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:26]</span>
+                <span class="scenario-name">This is to get  resource list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>689</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseAppUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.15">19:22:43.903 karate.env system property was: null 
+19:22:43.908 karate config: {
+  &quot;env&quot;: &quot;dev&quot;,
+  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;timeout&quot;: 30000,
+  &quot;retryCount&quot;: 3,
+  &quot;retryInterval&quot;: 1000,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;api/unknown&#39;,&#39;5&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = &#39;reqres-free-v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">687</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.18">19:22:43.911 request:
+1 &gt; GET https://reqres.in/api/unknown/5
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:22:44.596 response time in milliseconds: 684
+1 &lt; 200
+1 &lt; Date: Wed, 09 Jul 2025 13:52:45 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1752069165&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=b0VqFg7P%2BK1hM3wlfNVETjNp91jA67lyMq2quSBhVeQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1752069165&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=b0VqFg7P%2BK1hM3wlfNVETjNp91jA67lyMq2quSBhVeQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Request-Id: 35b1c9ed-4473-45f4-a9b8-08b417ec6895
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 81
+1 &lt; Ratelimit-Reset: 59
+1 &lt; Etag: W/&quot;11f-WnApWA+GSyv7FCDHvnlOHYXKGp0&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: MISS
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 95c84dbabf50b5e2-SIN
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=95842&amp;min_rtt=94940&amp;rtt_var=28266&amp;sent=7&amp;recv=8&amp;lost=0&amp;retrans=0&amp;sent_bytes=3105&amp;recv_bytes=706&amp;delivery_rate=38322&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=bfe7534a2447d39d&amp;ts=504&amp;x=0&quot;
+{&quot;data&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;tigerlily&quot;,&quot;year&quot;:2004,&quot;color&quot;:&quot;#E2583E&quot;,&quot;pantone_value&quot;:&quot;17-1456&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,&quot;text&quot;:&quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.20">19:22:44.598 [print] {
+  &quot;data&quot;: {
+    &quot;id&quot;: 5,
+    &quot;name&quot;: &quot;tigerlily&quot;,
+    &quot;year&quot;: 2004,
+    &quot;color&quot;: &quot;#E2583E&quot;,
+    &quot;pantone_value&quot;: &quot;17-1456&quot;
+  },
+  &quot;support&quot;: {
+    &quot;url&quot;: &quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,
+    &quot;text&quot;: &quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.3:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.3:27]</span>
+                <span class="scenario-name">This is to get  resource list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>654</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseAppUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.15">19:22:43.905 karate.env system property was: null 
+19:22:43.907 karate config: {
+  &quot;env&quot;: &quot;dev&quot;,
+  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;timeout&quot;: 30000,
+  &quot;retryCount&quot;: 3,
+  &quot;retryInterval&quot;: 1000,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;api/unknown&#39;,&#39;50&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = &#39;reqres-free-v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">651</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.18">19:22:43.914 request:
+1 &gt; GET https://reqres.in/api/unknown/50
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.22)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:22:44.563 response time in milliseconds: 648
+1 &lt; 404
+1 &lt; Date: Wed, 09 Jul 2025 13:52:45 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2
+1 &lt; Connection: keep-alive
+1 &lt; CF-RAY: 95c84dbaad4d12b0-SIN
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1752069165&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=b0VqFg7P%2BK1hM3wlfNVETjNp91jA67lyMq2quSBhVeQ%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1752069165&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=b0VqFg7P%2BK1hM3wlfNVETjNp91jA67lyMq2quSBhVeQ%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Request-Id: b84b554a-fc47-4f73-b8a2-aeebf12fbd33
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 83
+1 &lt; Ratelimit-Reset: 59
+1 &lt; Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: MISS
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=73450&amp;min_rtt=70086&amp;rtt_var=26210&amp;sent=7&amp;recv=8&amp;lost=0&amp;retrans=0&amp;sent_bytes=3105&amp;recv_bytes=707&amp;delivery_rate=40377&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=15e41ef37cdb5311&amp;ts=472&amp;x=0&quot;
+{}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.20">19:22:44.565 [print] {
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

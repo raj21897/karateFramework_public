@@ -1,0 +1,66 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.automation'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.6'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    // https://mvnrepository.com/artifact/com.intuit.karate/karate-core
+    implementation("com.intuit.karate:karate-core:1.4.1")
+    // https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting
+    implementation("net.masterthought:cucumber-reporting:5.9.0")
+}
+
+test {
+    useJUnitPlatform()
+    outputs.upToDateWhen { false }
+    systemProperty "karate.options", System.getProperty("karate.options")
+    systemProperty "karate.env", System.getProperty("karate.env")
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
+task karateDebug(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.intuit.karate.cli.Main'
+    args = ['-t', '~@ignore', '-T', '1', 'src/test/java']
+}
+
+task karateExecute(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.intuit.karate.cli.Main'
+    args = ['-t', '~@ignore', 'src/test/java']
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task generateCucumberReports {
+    doLast {
+        javaexec {
+            mainClass = "net.masterthought.cucumber.Configuration"
+            classpath = configurations.cucumberRuntime
+            args = ["${buildDir}/cucumber-html-reports", "${buildDir}/test-results"]
+        }
+    }
+}
