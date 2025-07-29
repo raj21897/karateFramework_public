@@ -10,7 +10,7 @@ public class parallelRunner2 {
     @Test
     public  void excuteKarateTests(){
 
-        Runner.path("classpath:features").parallel(10);
+        Runner.path("classpath:features/dataDriven/runner.feature").parallel(50);
 
     }
 }
