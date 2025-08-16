@@ -20,9 +20,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
     testImplementation 'net.masterthought:cucumber-reporting:5.7.6'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    // https://mvnrepository.com/artifact/com.intuit.karate/karate-core
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.1'
+    testImplementation 'com.h2database:h2:2.3.232'
     implementation("com.intuit.karate:karate-core:1.4.1")
-    // https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting
     implementation("net.masterthought:cucumber-reporting:5.9.0")
 }
 
