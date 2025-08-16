@@ -26,7 +26,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 });
 </script>
 
-    <title>features.database.testDb</title>
+    <title>features.database.testdb</title>
   </head>
   <body>
     <div id="root-container">
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">2</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,16 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-07-31 12:30:20 PM</div>
+    <div>2025-08-05 04:31:14 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Read data from students table</span></a>
-          </div>
-          <div class="nav-item failed">
-            <a href="#[2:10]"><span>[2:10]</span> <span>Update student name</span></a>
+          <div class="nav-item passed">
+            <a href="#[1:20]"><span>[1:20]</span> <span>Validate student by ID</span></a>
           </div>
         </div>
       </div>
@@ -67,47 +64,47 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">features/database/testDb.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">DB Access via Java</span>
+          <span class="feature-path">features/database/testdb.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validate student API data against DB</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:6]">
+          <div class="scenario-heading" id="[1:20]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:6]</span>
-                <span class="scenario-name">Read data from students table</span>
+                Scenario: <span>[1:20]</span>
+                <span class="scenario-name">Validate student by ID</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>164</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>647</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:6]bg">
+            <div class="step-container" id="[1:20]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:6]bg"><div>
+          <div data-parent="[1:20]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def DbUtils = Java.type(&#39;utils.DbUtils&#39;)</span>
+        <span>*</span>&nbsp;<span>def DbQueries = karate.get(&#39;DbQueries&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -116,8 +113,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">12:30:20.489 karate.env system property was: null 
-12:30:20.530 karate config: {
+  <div class="preformatted" data-parent="0.18">16:31:14.142 karate.env system property was: null 
+16:31:14.219 karate config: {
   &quot;env&quot;: &quot;staging&quot;,
   &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
   &quot;timeout&quot;: 30000,
@@ -125,7 +122,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   &quot;retryInterval&quot;: 1000,
   &quot;newAPI_URL&quot;: &quot;https://automationexercise.com/api/searchProduct&quot;,
   &quot;baseUrl&quot;: &quot;https://reqres.in&quot;,
-  &quot;demo1&quot;: &quot;this is stagging env&quot;
+  &quot;dbUrl&quot;: &quot;jdbc:h2:~/test&quot;,
+  &quot;dbUser&quot;: &quot;sa&quot;,
+  &quot;dbPassword&quot;: &quot;&quot;,
+  &quot;DbUtils&quot;: &quot;utils.DbUtils&quot;,
+  &quot;DbQueries&quot;: &quot;utils.DbQueries&quot;,
+  &quot;demo1&quot;: &quot;this is stagging env&quot;,
+  &quot;db&quot;: {
+    &quot;url&quot;: &quot;jdbc:h2:file:~/test;AUTO_SERVER=TRUE&quot;,
+    &quot;user&quot;: &quot;sa&quot;,
+    &quot;password&quot;: &quot;&quot;
+  }
 }
  
 </div>   
@@ -137,61 +144,69 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
-  
-
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref failed">7</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
       
-      <div class="step-cell failed">
-        <span>*</span>&nbsp;<span>def result = DbUtils.read(&#39;SELECT * FROM students&#39;)</span>
-      </div>
+      <div class="step-cell comment"># Call the API</div>
     </div>
-    <div class="time-cell failed">157</div>
+    <div class="time-cell comment"></div>            
   </div>
 
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.7">12:30:20.743 classpath:features/database/testDb.feature:7
-* def result = DbUtils.read(&#39;SELECT * FROM students&#39;)
-js failed:
-&gt;&gt;&gt;&gt;
-01: DbUtils.read(&#39;SELECT * FROM students&#39;)
-&lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: Database may be already in use: &quot;C:/Users/beori/test.mv.db&quot;. Possible solutions: close all other connection(s); use the server mode [90020-224]
-- org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
-- org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-- org.h2.message.DbException.get(DbException.java:212)
-- org.h2.mvstore.db.Store.convertMVStoreException(Store.java:165)
-- org.h2.mvstore.db.Store.&lt;init&gt;(Store.java:142)
-- org.h2.engine.Database.&lt;init&gt;(Database.java:326)
-- org.h2.engine.Engine.openSession(Engine.java:92)
-
-classpath:features/database/testDb.feature:7
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    Given url baseUrl + &#39;/students/1&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref skipped">8</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>print result</span>
+      <div class="step-cell comment">#    When method get</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    Then status 200</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def apiStudent = response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Call the DB Connect feature with query</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = DbQueries.getStudentById(1)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -206,41 +221,108 @@ classpath:features/database/testDb.feature:7
 
 </div>
 </div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2:10]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2:10]</span>
-                <span class="scenario-name">Update student name</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>79</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2:10]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2:10]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbCall = call read(&#39;dbConnect.feature&#39;) { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">631</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.29.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.database.dbConnect</div>
+      </div>
+      <div class="time-cell passed">574</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.29.0.call">
+    <div class="step-container" id="0.29.0.call.0.45">
+      <div class="step-ref passed">45</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def DbUtils = Java.type(&#39;utils.DbUtils&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.29.0.call">
+    <div class="step-container" id="0.29.0.call.0.46">
+      <div class="step-ref passed">46</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbUrl = karate.get(&#39;dbUrl&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.29.0.call">
+    <div class="step-container" id="0.29.0.call.0.47">
+      <div class="step-ref passed">47</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbUser = karate.get(&#39;dbUser&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">2</div>
@@ -252,82 +334,26 @@ classpath:features/database/testDb.feature:7
 
   
 
-  <div class="preformatted" data-parent="0.4">12:30:20.832 karate.env system property was: null 
-12:30:20.854 karate config: {
-  &quot;env&quot;: &quot;staging&quot;,
-  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
-  &quot;timeout&quot;: 30000,
-  &quot;retryCount&quot;: 3,
-  &quot;retryInterval&quot;: 1000,
-  &quot;newAPI_URL&quot;: &quot;https://automationexercise.com/api/searchProduct&quot;,
-  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;,
-  &quot;demo1&quot;: &quot;this is stagging env&quot;
-}
- 
-</div>   
+     
 
   
 
 </div>
 </div>
-          <div><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref failed">11</div>
-      
-      <div class="step-cell failed">
-        <span>*</span>&nbsp;<span>def count = DbUtils.update(&quot;UPDATE students SET name = &#39;Rajesh Kumar&#39; WHERE id = 1&quot;)</span>
+  <div class="step-row" data-parent="0.29.0.call">
+    <div class="step-container" id="0.29.0.call.0.48">
+      <div class="step-ref passed">48</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbPassword = karate.get(&#39;dbPassword&#39;)</span>
       </div>
     </div>
-    <div class="time-cell failed">77</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.11">12:30:20.952 classpath:features/database/testDb.feature:11
-* def count = DbUtils.update(&quot;UPDATE students SET name = &#39;Rajesh Kumar&#39; WHERE id = 1&quot;)
-js failed:
-&gt;&gt;&gt;&gt;
-01: DbUtils.update(&quot;UPDATE students SET name = &#39;Rajesh Kumar&#39; WHERE id = 1&quot;)
-&lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: Database may be already in use: &quot;C:/Users/beori/test.mv.db&quot;. Possible solutions: close all other connection(s); use the server mode [90020-224]
-- org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
-- org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-- org.h2.message.DbException.get(DbException.java:212)
-- org.h2.mvstore.db.Store.convertMVStoreException(Store.java:165)
-- org.h2.mvstore.db.Store.&lt;init&gt;(Store.java:142)
-- org.h2.engine.Database.&lt;init&gt;(Database.java:326)
-- org.h2.engine.Engine.openSession(Engine.java:92)
-
-classpath:features/database/testDb.feature:11
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref skipped">12</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>print count</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -337,6 +363,131 @@ classpath:features/database/testDb.feature:11
   
 
      
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.29.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># &#39;query&#39; must be passed as argument</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.29.0.call">
+    <div class="step-container" id="0.29.0.call.0.52">
+      <div class="step-ref passed">52</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = DbUtils.runQuery(query, dbUrl, dbUser, dbPassword)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">550</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.29.0.call">
+    <div class="step-container" id="0.29.0.call.0.53">
+      <div class="step-ref passed">53</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbResult = result</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbStudent = dbCall.dbResult[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print dbStudent.FULL_NAME</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">16:31:14.916 [print] Rajesh Choudhari 
+</div>   
 
   
 

@@ -9,7 +9,7 @@ public class TestRunner {
 //       return Karate.run("C:/Users/beori/IdeaProjects/project - Copy/src/test/java/features/crudOperations");
 //        return Karate.run("classpath:features/pathAndparam.feature");
 //        return Karate.run("C:/Users/beori/IdeaProjects/project - Copy/src/test/java/features/methods");
-        return Karate.run("classpath:features/database/dbconnect.feature");
+        return Karate.run("classpath:features/crudOperations/apiChaining.feature");
 
 
     }
