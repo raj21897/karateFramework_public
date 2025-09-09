@@ -1,0 +1,52 @@
+{
+  "company": {
+    "name": "Tech Innovations Inc.",
+    "location": "Silicon Valley",
+    "departments": [
+      {
+        "name": "Engineering",
+        "head": "Dr. Alice Smith",
+        "employees": [
+          {
+            "id": "E001",
+            "firstName": "John",
+            "lastName": "Doe",
+            "position": "Software Engineer",
+            "skills": ["Python", "Java", "SQL"],
+            "projects": [
+              {"name": "Project Alpha", "status": "Completed", "budget": 150000},
+              {"name": "Project Beta", "status": "In Progress", "budget": 200000}
+            ]
+          },
+          {
+            "id": "E002",
+            "firstName": "Jane",
+            "lastName": "Miller",
+            "position": "Lead Developer",
+            "skills": ["JavaScript", "React", "Node.js"],
+            "projects": [
+              {"name": "Project Gamma", "status": "Pending", "budget": 100000}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "head": "Mr. Robert Johnson",
+        "employees": [
+          {
+            "id": "M001",
+            "firstName": "Sarah",
+            "lastName": "Davis",
+            "position": "Marketing Specialist",
+            "campaigns": ["Spring Sale", "Holiday Promotion"]
+          }
+        ]
+      }
+    ],
+    "products": [
+      {"id": "P001", "name": "AI Assistant", "version": "2.0"},
+      {"id": "P002", "name": "Cloud Platform", "version": "1.5"}
+    ]
+  }
+}

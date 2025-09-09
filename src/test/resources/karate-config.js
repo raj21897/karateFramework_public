@@ -8,6 +8,7 @@ function fn() {
   var config = {
     env: env,
     baseAppUrl: 'https://reqres.in',
+    shoppingCartAPI : 'https://automationexercise.com/api',
     timeout: 30000,
     retryCount: 3,
     retryInterval: 1000,
@@ -22,7 +23,9 @@ function fn() {
          headers: {
               'x-api-key': 'reqres-free-v1',
               'Content-Type': 'application/json'
-            }
+            },
+         variable1: "varible1 value",
+         flag1: true
   };
 
   if (env == 'dev') {
