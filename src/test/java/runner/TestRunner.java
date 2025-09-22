@@ -8,6 +8,6 @@ public class TestRunner {
 
     @Karate.Test
     Karate runTest() {
-     return Karate.run("classpath:features/methods/varibles.feature");
+     return Karate.run("classpath:features/database/dbRunquery.feature");
     }
 }
