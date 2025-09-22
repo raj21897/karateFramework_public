@@ -11,6 +11,7 @@ public class ParellelRunner {
             Builder aRunner = new Builder();
             aRunner.path("classpath:features");
             aRunner.parallel(5);
+//            aRunner.tags("smoke");
 
         }
 }

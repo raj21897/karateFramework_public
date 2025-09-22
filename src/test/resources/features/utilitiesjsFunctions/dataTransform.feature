@@ -16,7 +16,7 @@ Feature: Data tarnsform using js
     * def trdata = transforuser(rawdata)
     * print trdata
 
-    Examples:
+    Examples:n
    |firstName|lastName   |email         |
    | Rajesh  | Choudhari |ABC@gmail.com |
    | Raj     | Choudhari |xyz@gmail.com |

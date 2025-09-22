@@ -8,6 +8,6 @@ public class TestRunner {
 
     @Karate.Test
     Karate runTest() {
-     return Karate.run("classpath:features/filesHandling/readJsonFiles.feature");
+     return Karate.run("classpath:features/methods/varibles.feature");
     }
 }
