@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"3d34886a-acab-4db5-a9dd-4aad34bacc1e",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.filesHandling.readCSVfile</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-08-28 04:19:50 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>CSV reading data adn print</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:25]"><span>[2.1:25]</span> <span>try multiple sets of data and print</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:25]"><span>[2.2:25]</span> <span>try multiple sets of data and print</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/filesHandling/readCSVfile.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Handle csv file</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">CSV reading data adn print</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>19</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def csvdata  = read(&quot;classpath:features/filesHandling/example.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:19:50.496 karate.env system property was: null 
+16:19:50.563 karate config: {
+  &quot;env&quot;: &quot;testing&quot;,
+  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;shoppingCartAPI&quot;: &quot;https://automationexercise.com/api&quot;,
+  &quot;timeout&quot;: 30000,
+  &quot;retryCount&quot;: 3,
+  &quot;retryInterval&quot;: 1000,
+  &quot;newAPI_URL&quot;: &quot;https://automationexercise.com/api/searchProduct&quot;,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;dbUrl&quot;: &quot;jdbc:h2:~/test&quot;,
+  &quot;dbUser&quot;: &quot;sa&quot;,
+  &quot;dbPassword&quot;: &quot;&quot;,
+  &quot;DbUtils&quot;: &quot;utils.DbUtils&quot;,
+  &quot;DbQueries&quot;: &quot;utils.DbQueries&quot;,
+  &quot;headers&quot;: {
+    &quot;x-api-key&quot;: &quot;reqres-free-v1&quot;,
+    &quot;Content-Type&quot;: &quot;application/json&quot;
+  },
+  &quot;variable1&quot;: &quot;varible1 value&quot;,
+  &quot;flag1&quot;: true,
+  &quot;demo1&quot;: &quot;this is testing env&quot;,
+  &quot;db&quot;: {
+    &quot;url&quot;: &quot;jdbc:h2:file:~/test;AUTO_SERVER=TRUE&quot;,
+    &quot;user&quot;: &quot;sa&quot;,
+    &quot;password&quot;: &quot;&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print csvdata</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:19:50.600 [print] [
+  {
+    &quot;username&quot;: &quot;rajesh&quot;,
+    &quot;password&quot;: &quot;pass@123&quot;,
+    &quot;city&quot;: &quot;pune&quot;,
+    &quot;job&quot;: &quot;QA&quot;,
+    &quot;education&quot;: &quot;BE&quot;,
+    &quot;adult&quot;: &quot;TRUE&quot;
+  },
+  {
+    &quot;username&quot;: &quot;ra21897&quot;,
+    &quot;password&quot;: &quot;Admin@213&quot;,
+    &quot;city&quot;: &quot;mumbai&quot;,
+    &quot;job&quot;: &quot;dev&quot;,
+    &quot;education&quot;: &quot;grad&quot;,
+    &quot;adult&quot;: &quot;false&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def u1 =  csvdata[0].username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print u1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">16:19:50.607 [print] rajesh 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:25]</span>
+                <span class="scenario-name">try multiple sets of data and print</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;username:&#39;, &#39;#(rajesh)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">16:19:50.639 karate.env system property was: null 
+16:19:50.647 karate config: {
+  &quot;env&quot;: &quot;testing&quot;,
+  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;shoppingCartAPI&quot;: &quot;https://automationexercise.com/api&quot;,
+  &quot;timeout&quot;: 30000,
+  &quot;retryCount&quot;: 3,
+  &quot;retryInterval&quot;: 1000,
+  &quot;newAPI_URL&quot;: &quot;https://automationexercise.com/api/searchProduct&quot;,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;dbUrl&quot;: &quot;jdbc:h2:~/test&quot;,
+  &quot;dbUser&quot;: &quot;sa&quot;,
+  &quot;dbPassword&quot;: &quot;&quot;,
+  &quot;DbUtils&quot;: &quot;utils.DbUtils&quot;,
+  &quot;DbQueries&quot;: &quot;utils.DbQueries&quot;,
+  &quot;headers&quot;: {
+    &quot;x-api-key&quot;: &quot;reqres-free-v1&quot;,
+    &quot;Content-Type&quot;: &quot;application/json&quot;
+  },
+  &quot;variable1&quot;: &quot;varible1 value&quot;,
+  &quot;flag1&quot;: true,
+  &quot;demo1&quot;: &quot;this is testing env&quot;,
+  &quot;db&quot;: {
+    &quot;url&quot;: &quot;jdbc:h2:file:~/test;AUTO_SERVER=TRUE&quot;,
+    &quot;user&quot;: &quot;sa&quot;,
+    &quot;password&quot;: &quot;&quot;
+  }
+}
+ 
+16:19:50.647 [print] username: #(rajesh) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;password:&#39;, &#39;#(pass@123)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">16:19:50.647 [print] password: #(pass@123) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;city:&#39;, &#39;#(pune)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">16:19:50.656 [print] city: #(pune) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;job:&#39;, &#39;#(QA)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">16:19:50.656 [print] job: #(QA) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;adult:&#39;, &#39;#(TRUE)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">16:19:50.658 [print] adult: #(TRUE) 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:25]</span>
+                <span class="scenario-name">try multiple sets of data and print</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;username:&#39;, &#39;#(ra21897)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.12">16:19:50.669 karate.env system property was: null 
+16:19:50.676 karate config: {
+  &quot;env&quot;: &quot;testing&quot;,
+  &quot;baseAppUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;shoppingCartAPI&quot;: &quot;https://automationexercise.com/api&quot;,
+  &quot;timeout&quot;: 30000,
+  &quot;retryCount&quot;: 3,
+  &quot;retryInterval&quot;: 1000,
+  &quot;newAPI_URL&quot;: &quot;https://automationexercise.com/api/searchProduct&quot;,
+  &quot;baseUrl&quot;: &quot;https://reqres.in&quot;,
+  &quot;dbUrl&quot;: &quot;jdbc:h2:~/test&quot;,
+  &quot;dbUser&quot;: &quot;sa&quot;,
+  &quot;dbPassword&quot;: &quot;&quot;,
+  &quot;DbUtils&quot;: &quot;utils.DbUtils&quot;,
+  &quot;DbQueries&quot;: &quot;utils.DbQueries&quot;,
+  &quot;headers&quot;: {
+    &quot;x-api-key&quot;: &quot;reqres-free-v1&quot;,
+    &quot;Content-Type&quot;: &quot;application/json&quot;
+  },
+  &quot;variable1&quot;: &quot;varible1 value&quot;,
+  &quot;flag1&quot;: true,
+  &quot;demo1&quot;: &quot;this is testing env&quot;,
+  &quot;db&quot;: {
+    &quot;url&quot;: &quot;jdbc:h2:file:~/test;AUTO_SERVER=TRUE&quot;,
+    &quot;user&quot;: &quot;sa&quot;,
+    &quot;password&quot;: &quot;&quot;
+  }
+}
+ 
+16:19:50.681 [print] username: #(ra21897) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;password:&#39;, &#39;#(Admin@213)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.13">16:19:50.686 [print] password: #(Admin@213) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;city:&#39;, &#39;#(mumbai)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">16:19:50.689 [print] city: #(mumbai) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;job:&#39;, &#39;#(dev)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.15">16:19:50.689 [print] job: #(dev) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;adult:&#39;, &#39;#(false)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.16">16:19:50.689 [print] adult: #(false) 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

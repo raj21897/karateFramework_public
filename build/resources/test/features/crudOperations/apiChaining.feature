@@ -1,6 +1,6 @@
 Feature: User Management Workflow
 
- 
+
   Scenario: Complete user lifecycle
   # Create user
     Given url 'https://reqres.in/api/users'

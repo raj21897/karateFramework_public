@@ -1,5 +1,4 @@
 #Feature: Use DB Connection from another feature
-#
 #  Background:
 #    # Call dbconnect.feature ONCE
 #    * def dbInit = callonce read('classpath:features/database/dbconnect.feature')
@@ -11,7 +10,7 @@
 #    * def rs = DbUtils.executeQuery("SELECT * FROM STUDENTS")
 #    * def result = DbUtils.rows(rs)
 #    * print result
-#
+
 Feature: Validate student API data against DB
 
   Background:
